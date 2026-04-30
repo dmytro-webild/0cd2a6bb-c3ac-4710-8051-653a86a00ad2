@@ -35,10 +35,10 @@ export default function WebAgency2Page() {
           navItems={[
             { name: "Work", id: "work" },
             { name: "Services", id: "services" },
-            { name: "About", id: "about" },
-            { name: "Contact", id: "contact" },
+            { name: "About", id: "/about" },
+            { name: "Contact", id: "/contact" },
           ]}
-          button={{ text: "Get Started", href: "#contact" }}
+          button={{ text: "Get Started", href: "/contact" }}
         />
         <HeroSplitDoubleCarousel
           title="We Build Digital Experiences"
@@ -48,7 +48,7 @@ export default function WebAgency2Page() {
           tagAnimation="slide-up"
           background={{ variant: "canvas-reveal" }}
           buttons={[
-            { text: "Start Project", href: "#contact" },
+            { text: "Start Project", href: "/contact" },
             { text: "View Work", href: "#work" },
           ]}
           buttonAnimation="slide-up"
@@ -78,28 +78,18 @@ export default function WebAgency2Page() {
           buttonAnimation="slide-up"
           features={[
             {
-              title: "SEO",
-              description: "We optimize your website to rank higher on search engines and drive organic traffic.",
-              bentoComponent: "marquee",
-              centerIcon: Search,
-              variant: "text",
-              texts: ["Keywords", "Backlinks", "Meta Tags", "Organic Traffic", "Rankings", "Analytics", "SERP", "Indexing"],
+              title: "SEO",              description: "We optimize your website to rank higher on search engines and drive organic traffic.",              bentoComponent: "marquee",              centerIcon: Search,
+              variant: "text",              texts: ["Keywords", "Backlinks", "Meta Tags", "Organic Traffic", "Rankings", "Analytics", "SERP", "Indexing"],
             },
             {
-              title: "Web Development",
-              description: "Custom-built websites that are fast, responsive, and designed to convert.",
-              bentoComponent: "media-stack",
-              items: [
+              title: "Web Development",              description: "Custom-built websites that are fast, responsive, and designed to convert.",              bentoComponent: "media-stack",              items: [
                 { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/dev-2.webp", imageAlt: "Web project - AgentFlow AI platform" },
                 { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/dev-1.webp", imageAlt: "Web project - Architecture studio" },
                 { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/dev-3.webp", imageAlt: "Web project - Summit Roofing" },
               ],
             },
             {
-              title: "Branding",
-              description: "Build a memorable brand identity that resonates with your audience.",
-              bentoComponent: "media-stack",
-              items: [
+              title: "Branding",              description: "Build a memorable brand identity that resonates with your audience.",              bentoComponent: "media-stack",              items: [
                 { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/shot-1.webp", imageAlt: "Brand project 1" },
                 { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/shot-2.webp", imageAlt: "Brand project 2" },
                 { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/shot-4.webp", imageAlt: "Brand project 3" },
@@ -117,109 +107,20 @@ export default function WebAgency2Page() {
           cardClassName="!h-auto aspect-video"
           features={[
             {
-              title: "Umbra Skincare",
-              description: "Luxury fragrance e-commerce",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/project-1.webp",
-              imageAlt: "Umbra Skincare website",
-              buttonIcon: ArrowUpRight,
-              buttonHref: "#",
-            },
+              title: "Umbra Skincare",              description: "Luxury fragrance e-commerce",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/project-1.webp",              imageAlt: "Umbra Skincare website",              buttonIcon: ArrowUpRight,
+              buttonHref: "#"},
             {
-              title: "Luxuria Travel",
-              description: "Bespoke luxury travel experiences",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/project-2.webp",
-              imageAlt: "Luxuria Travel website",
-              buttonIcon: ArrowUpRight,
-              buttonHref: "#",
-            },
+              title: "Luxuria Travel",              description: "Bespoke luxury travel experiences",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/project-2.webp",              imageAlt: "Luxuria Travel website",              buttonIcon: ArrowUpRight,
+              buttonHref: "#"},
             {
-              title: "Dental Care",
-              description: "Premier dental practice",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/project-3.webp",
-              imageAlt: "Luxury Dental Care website",
-              buttonIcon: ArrowUpRight,
-              buttonHref: "#",
-            },
+              title: "Dental Care",              description: "Premier dental practice",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/project-3.webp",              imageAlt: "Luxury Dental Care website",              buttonIcon: ArrowUpRight,
+              buttonHref: "#"},
             {
-              title: "Summit Roofing",
-              description: "Professional roofing services",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/project-4.webp",
-              imageAlt: "Summit Roofing website",
-              buttonIcon: ArrowUpRight,
-              buttonHref: "#",
-            },
+              title: "Summit Roofing",              description: "Professional roofing services",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/project-4.webp",              imageAlt: "Summit Roofing website",              buttonIcon: ArrowUpRight,
+              buttonHref: "#"},
             {
-              title: "Dubai Real Estate",
-              description: "Luxury property listings",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/project-5.webp",
-              imageAlt: "Dubai Real Estate website",
-              buttonIcon: ArrowUpRight,
-              buttonHref: "#",
-            },
-          ]}
-        />
-        <FeatureBento
-          title="Our Promise"
-          description="We deliver results that speak for themselves."
-          textboxLayout="default"
-          useInvertedBackground={false}
-          animationType="slide-up"
-          features={[
-            {
-              title: "All Devices Optimization",
-              description: "Pixel-perfect websites that look stunning on every screen size and device.",
-              bentoComponent: "phone",
-              statusIcon: Lock,
-              alertIcon: Monitor,
-              alertTitle: "Responsive check",
-              alertMessage: "All breakpoints passed",
-              apps: [
-                { name: "Phone", icon: Phone },
-                { name: "SMS", icon: MessageCircle },
-                { name: "Books", icon: BookOpen },
-                { name: "TV", icon: Tv },
-                { name: "Camera", icon: Camera },
-                { name: "Music", icon: Music },
-                { name: "Settings", icon: Settings },
-                { name: "Chat", icon: MessageCircle },
-              ],
-            },
-            {
-              title: "Secure Hosting",
-              description: "Enterprise-grade security and 99.9% uptime for your website.",
-              bentoComponent: "reveal-icon",
-              icon: Shield,
-            },
-            {
-              title: "Fast Turnaround",
-              description: "From concept to launch in record time without sacrificing quality.",
-              bentoComponent: "timeline",
-              heading: "Project Launch",
-              subheading: "Week 1",
-              items: [
-                { label: "Discovery & wireframes", detail: "Day 1-3" },
-                { label: "Design & development", detail: "Day 4-10" },
-                { label: "Testing & deployment", detail: "Day 11-14" },
-              ],
-              completedLabel: "Live",
-            },
-            {
-              title: "Seamless Integrations",
-              description: "Connect with the tools you already use — CRMs, analytics, payments, and more.",
-              bentoComponent: "orbiting-icons",
-              centerIcon: Puzzle,
-              items: [
-                { icon: Shield },
-                { icon: Monitor },
-                { icon: Zap },
-                { icon: TrendingUp },
-              ],
-            },
-            {
-              title: "Growth Trends",
-              description: "Data-driven insights to optimize your search presence and drive traffic.",
-              bentoComponent: "line-chart",
-            },
+              title: "Dubai Real Estate",              description: "Luxury property listings",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/project-5.webp",              imageAlt: "Dubai Real Estate website",              buttonIcon: ArrowUpRight,
+              buttonHref: "#"},
           ]}
         />
         <TestimonialCardFifteen
@@ -232,44 +133,6 @@ export default function WebAgency2Page() {
           ratingAnimation="slide-up"
           avatarsAnimation="slide-up"
           useInvertedBackground={false}
-        />
-        <MetricCardOne
-          title="Trusted by Industry Leaders"
-          description="Years of experience building digital products that drive real results."
-          textboxLayout="default"
-          useInvertedBackground={false}
-          gridVariant="uniform-all-items-equal"
-          animationType="slide-up"
-          metrics={[
-            { id: "projects", value: "100+", title: "Projects", description: "Successfully delivered across all industries", icon: Award },
-            { id: "satisfaction", value: "99%", title: "Satisfaction", description: "Client satisfaction rate and counting", icon: Users },
-            { id: "years", value: "8+", title: "Years", description: "Of crafting exceptional digital experiences", icon: TrendingUp },
-          ]}
-        />
-        <FeatureCardSixteen
-          title="Why Choose Webild"
-          description="See the difference a professional web agency makes."
-          textboxLayout="default"
-          useInvertedBackground={false}
-          animationType="slide-up"
-          negativeCard={{
-            items: [
-              "Generic templates with no personality",
-              "Slow load times and poor performance",
-              "No SEO strategy or search visibility",
-              "Outdated design that hurts credibility",
-              "No ongoing support after launch",
-            ],
-          }}
-          positiveCard={{
-            items: [
-              "Custom designs tailored to your brand",
-              "Lightning-fast performance on all devices",
-              "Built-in SEO to drive organic traffic",
-              "Modern design that builds trust",
-              "Dedicated support and maintenance",
-            ],
-          }}
         />
         <TeamCardFive
           title="Meet the Team"
@@ -284,27 +147,13 @@ export default function WebAgency2Page() {
             { id: "3", name: "Carlos Mendoza", role: "UX Designer", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency-2/team-3.webp", imageAlt: "Carlos Mendoza" },
           ]}
         />
-        <FaqBase
-          title="Frequently Asked Questions"
-          description="Everything you need to know about working with us."
-          textboxLayout="default"
-          useInvertedBackground={false}
-          faqsAnimation="slide-up"
-          faqs={[
-            { id: "1", title: "How long does a typical project take?", content: "Most projects are completed within 2-4 weeks depending on scope and complexity. We'll provide a detailed timeline during our initial consultation." },
-            { id: "2", title: "What is your pricing structure?", content: "We offer project-based pricing tailored to your needs. Every project includes design, development, SEO optimization, and post-launch support." },
-            { id: "3", title: "Do you offer ongoing maintenance?", content: "Yes! We provide ongoing support and maintenance packages to keep your website updated, secure, and performing at its best." },
-            { id: "4", title: "Can you redesign my existing website?", content: "Absolutely. We specialize in website redesigns that modernize your brand while preserving your existing content and SEO rankings." },
-            { id: "5", title: "What technologies do you use?", content: "We build with modern technologies including Next.js, React, and Tailwind CSS to ensure fast, scalable, and maintainable websites." },
-          ]}
-        />
         <ContactCTA
           tag="Get in Touch"
           title="Ready to Transform Your Digital Presence?"
           description="Let's build something extraordinary together. Get in touch and let's discuss your next project."
           background={{ variant: "rotated-rays-animated" }}
           buttons={[
-            { text: "Start Your Project", href: "#contact" },
+            { text: "Start Your Project", href: "/contact" },
             { text: "View Our Work", href: "#work" },
           ]}
           buttonAnimation="slide-up"
@@ -315,17 +164,15 @@ export default function WebAgency2Page() {
           copyrightText="© 2026 | Webild"
           columns={[
             {
-              title: "Company",
-              items: [
-                { label: "About", href: "#about" },
+              title: "Company",              items: [
+                { label: "About", href: "/about" },
                 { label: "Services", href: "#services" },
                 { label: "Work", href: "#work" },
-                { label: "Contact", href: "#contact" },
+                { label: "Contact", href: "/contact" },
               ],
             },
             {
-              title: "Services",
-              items: [
+              title: "Services",              items: [
                 { label: "Web Development", href: "#" },
                 { label: "SEO", href: "#" },
                 { label: "Branding", href: "#" },
@@ -333,8 +180,7 @@ export default function WebAgency2Page() {
               ],
             },
             {
-              title: "Connect",
-              items: [
+              title: "Connect",              items: [
                 { label: "Twitter", href: "#" },
                 { label: "LinkedIn", href: "#" },
                 { label: "Instagram", href: "#" },
