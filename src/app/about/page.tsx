@@ -28,6 +28,10 @@ export default function AboutPage() {
             textboxLayout="default"
             mediaAnimation="slide-up"
             useInvertedBackground={false}
+            bulletPoints={[
+              { title: "Expert Craftsmanship", description: "Meticulous attention to detail in every project." },
+              { title: "Premium Materials", description: "Sourced from the best suppliers globally." }
+            ]}
           />
         </div>
         <div id="footer" data-section="footer">
